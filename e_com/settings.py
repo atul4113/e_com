@@ -120,3 +120,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "e_com", "static", "media")
+#MEDIA_ROOT = '/home/Lovey/atul/django/e_com/static/media/'
+
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "e_com", "static", "static_root")
+STATICFILES_DIRS = (
+    os.path.join(os.path.dirname(BASE_DIR), "e_com", "static", "static_files"),
+)
+

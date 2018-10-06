@@ -14,7 +14,7 @@ class Product(models.Model):
 
 class ProductImage(models.Model):
     product = models.ForeignKey(Product,on_delete=True)
-    image = models.ImageField(upload_to='product/image/')
+    image = models.ImageField(upload_to='products/image/')
     thambnail = models.BooleanField(default=False)
     active = models.BooleanField(default=False)
     updated = models.DateTimeField(auto_now=True, auto_now_add=False)
